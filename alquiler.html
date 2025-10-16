@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AutoRent — Formulario de Alquiler</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header small">
+    <div class="container header-inner">
+      <h1 class="brand"><a href="index.html">AutoRent S.A.S.</a></h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="vehiculos.html">Vehículos</a></li>
+          <li><a href="alquiler.html" class="active">Alquiler</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Solicitud de Alquiler</h2>
+      <p>Completa el formulario para solicitar tu reserva. Nos pondremos en contacto con la información que dejes.</p>
+
+      <form action="#" method="post" class="form-grid">
+        <label>
+          Nombre completo
+          <input type="text" name="nombre" required placeholder="Tu nombre completo">
+        </label>
+
+        <label>
+          Correo electrónico
+          <input type="email" name="email" required placeholder="correo@ejemplo.com">
+        </label>
+
+        <label>
+          Tipo de vehículo
+          <select name="tipo" required>
+            <option value="">-- Selecciona --</option>
+            <option value="Sedan">Sedán</option>
+            <option value="SUV">SUV</option>
+            <option value="Compacto">Compacto</option>
+            <option value="Van">Van</option>
+          </select>
+        </label>
+
+        <label>
+          Fecha de alquiler
+          <input type="date" name="fecha_inicio" required>
+        </label>
+
+        <label>
+          Fecha de devolución
+          <input type="date" name="fecha_fin" required>
+        </label>
+
+        <label class="full">
+          Comentarios / requisitos
+          <textarea name="comentarios" rows="4" placeholder="Ej.: Entrega en aeropuerto, silla de bebé, etc."></textarea>
+        </label>
+
+        <label>
+          Teléfono de contacto
+          <input type="tel" name="telefono" placeholder="+57 3XX XXX XXXX">
+        </label>
+
+        <div class="form-actions full">
+          <button type="submit" class="button">Enviar solicitud</button>
+          <a href="vehiculos.html" class="button secondary">Volver a catálogo</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year3"></span> AutoRent S.A.S.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>

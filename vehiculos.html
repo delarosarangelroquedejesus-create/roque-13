@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AutoRent — Vehículos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header small">
+    <div class="container header-inner">
+      <h1 class="brand"><a href="index.html">AutoRent S.A.S.</a></h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="vehiculos.html" class="active">Vehículos</a></li>
+          <li><a href="alquiler.html">Alquiler</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Catálogo de vehículos</h2>
+      <p>Selecciona el vehículo que más se ajuste a tus necesidades. Tarifas por día indicadas.</p>
+
+      <div class="vehicle-grid">
+       
+        <article class="vehicle-card">
+          <img src="https://fotos.perfil.com/2022/06/03/trim/1280/720/toyota-corolla-1366408.jpg" alt="Toyota Corolla 2022" />
+          <div class="vehicle-info">
+            <h3>Toyota Corolla</h3>
+            <p>Tipo: Sedán</p>
+            <p>Modelo: 2022</p>
+            <p class="price">COP 120.000 / día</p>
+            <a href="alquiler.html?vehiculo=Toyota%20Corolla" class="button small">Reservar</a>
+          </div>
+        </article>
+
+        
+        <article class="vehicle-card">
+          <img src="https://www.motortrend.com/uploads/2022/08/030-2023-hyundai-tucson-hybrid.jpg" alt="Hyundai Tucson 2023" />
+          <div class="vehicle-info">
+            <h3>Hyundai Tucson</h3>
+            <p>Tipo: SUV</p>
+            <p>Modelo: 2023</p>
+            <p class="price">COP 200.000 / día</p>
+            <a href="alquiler.html?vehiculo=Hyundai%20Tucson" class="button small">Reservar</a>
+          </div>
+        </article>
+
+        
+        <article class="vehicle-card">
+          <img src="https://www.elcarrocolombiano.com/wp-content/uploads/2020/06/20200603-KIA-PICANTO-2021-EUROPA-02.jpg" alt="Kia Picanto 2021" />
+          <div class="vehicle-info">
+            <h3>Kia Picanto</h3>
+            <p>Tipo: Compacto</p>
+            <p>Modelo: 2021</p>
+            <p class="price">COP 80.000 / día</p>
+            <a href="alquiler.html?vehiculo=Kia%20Picanto" class="button small">Reservar</a>
+          </div>
+        </article>
+
+       
+        <article class="vehicle-card">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.6VkV48EcBliTX6JGM82RxQHaC-?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chevrolet N300 Van 2020" />
+          <div class="vehicle-info">
+            <h3>Chevrolet N300</h3>
+            <p>Tipo: Van</p>
+            <p>Modelo: 2020</p>
+            <p class="price">COP 220.000 / día</p>
+            <a href="alquiler.html?vehiculo=Chevrolet%20N300" class="button small">Reservar</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year2"></span> AutoRent S.A.S.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>

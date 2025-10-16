@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AutoRent S.A.S. — Inicio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">AutoRent S.A.S.</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="vehiculos.html">Vehículos</a></li>
+          <li><a href="alquiler.html">Alquiler</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <div class="container">
+        <h2>Movilidad segura y confiable</h2>
+        <p>Alquila el vehículo ideal para tu viaje en ciudades principales del país.</p>
+        <a href="vehiculos.html" class="button">Ver vehículos</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about grid">
+      <article>
+        <h3>Nuestra misión</h3>
+        <p>Ofrecer soluciones de transporte rentables, seguras y con excelente servicio al cliente.</p>
+      </article>
+      <article>
+        <h3>Nuestra visión</h3>
+        <p>Ser la primera opción en alquiler de vehículos en las principales ciudades del país.</p>
+      </article>
+      <article>
+        <h3>Servicios</h3>
+        <ul>
+          <li>Alquiler diario y por semanas</li>
+          <li>Rentas corporativas</li>
+          <li>Entrega en aeropuerto y hoteles (según ciudad)</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="features">
+      <h3>Por qué elegir AutoRent</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Flota variada</h4>
+          <p>Autos sedan, SUV, compactos y vans, siempre revisados y asegurados.</p>
+        </div>
+        <div class="card">
+          <h4>Precios transparentes</h4>
+          <p>Tarifas claras por día, sin cargos ocultos.</p>
+        </div>
+        <div class="card">
+          <h4>Soporte 24/7</h4>
+          <p>Asistencia en carretera disponible en zonas urbanas.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> AutoRent S.A.S. — Todos los derechos reservados.</p>
+      <ul class="social">
+        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

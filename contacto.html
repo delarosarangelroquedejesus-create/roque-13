@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AutoRent — Contacto</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header small">
+    <div class="container header-inner">
+      <h1 class="brand"><a href="index.html">AutoRent S.A.S.</a></h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="vehiculos.html">Vehículos</a></li>
+          <li><a href="alquiler.html">Alquiler</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="contact-grid">
+      <div>
+        <h2>Contacto / Reservas</h2>
+        <p>Dirección: Calle123, Barranquilla </p>
+        <p>Teléfono: +57 300 254 8546</p>
+        <p>Correo: reservas@autorent.com</p>
+
+        <h3>Síguenos</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Envíanos una consulta</h3>
+        <form action="#" method="post" class="form-vertical">
+          <label>Nombre
+            <input type="text" name="nombre" required>
+          </label>
+          <label>Correo
+            <input type="email" name="email" required>
+          </label>
+          <label>Mensaje
+            <textarea name="mensaje" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="button">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+ 
+   
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year4"></span> AutoRent S.A.S.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>
